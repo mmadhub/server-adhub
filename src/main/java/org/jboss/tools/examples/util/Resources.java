@@ -42,7 +42,7 @@ public class Resources {
     @SuppressWarnings("unused")
     @Produces
     @PersistenceContext
-    private EntityManager em;
+    private EntityManager em;//teste
 
     @Produces
     public Logger produceLog(InjectionPoint injectionPoint) {
