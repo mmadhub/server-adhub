@@ -20,7 +20,7 @@ import javax.validation.constraints.NotNull;
 public class Propaganda implements Serializable {
 
 	/**
-	 * 
+	 * teste
 	 */
 	private static final long serialVersionUID = 1L;
 
