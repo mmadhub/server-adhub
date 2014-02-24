@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "propaganda")
 @NamedQueries({ @NamedQuery(name = "Propaganda.buscaPropagandasPorMajor", query = "SELECT prop FROM Propaganda prop  WHERE prop.majorID = :majorID"),
-
+				@NamedQuery(name = "Propaganda.buscaPropagandasPorMajorEMinor", query = "SELECT prop FROM Propaganda prop  WHERE prop.majorID = :majorID AND prop.minorID = :minorID"),
 })
 public class Propaganda implements Serializable {
 

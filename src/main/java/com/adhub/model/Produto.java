@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "produto")
 @NamedQueries({ @NamedQuery(name = "Produto.buscaProdutoPorMajor", query = "SELECT prod FROM Produto prod  WHERE prod.majorID = :majorID"),
-
+				@NamedQuery(name = "Produto.buscaProdutoPorMajorEMinor", query = "SELECT prod FROM Produto prod  WHERE prod.majorID = :majorID AND prod.minorID = :minorID"),
 })
 public class Produto implements Serializable {
 
